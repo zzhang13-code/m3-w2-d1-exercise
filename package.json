@@ -1,0 +1,24 @@
+{
+  "name": "mongodb_demo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zzhang13-code/m3-w2-d1-exercise.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/zzhang13-code/m3-w2-d1-exercise/issues"
+  },
+  "homepage": "https://github.com/zzhang13-code/m3-w2-d1-exercise#readme",
+  "dependencies": {
+    "mongodb": "^7.8.0"
+  }
+}
