@@ -46,7 +46,15 @@ async function main() {
   const sorted = await collection.find().sort({ name: 1 }).toArray();
   console.log(sorted);
 
- }
+  const deleted = await collection.deleteOne({ address: 'Mountain 21' });
+  console.log(`${deleted.deletedCount} document deleted`);
+
+  const updated = await collection.updateOne(
+    { address: 'Valley 345' },
+    { $set: { name: 'Mickey', address: 'Canyon 123' } }
+  );
+  console.log(`${updated.modifiedCount} document updated`);
+}
 
 main().catch((error) => {
   console.error(error);
